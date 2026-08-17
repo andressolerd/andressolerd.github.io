@@ -25,18 +25,8 @@
       max-width: 380px;
       width: 100%;
     }
-    h1 {
-      margin-top: 0;
-      color: #1a1a1a;
-      font-size: 24px;
-      font-weight: 700;
-    }
-    p {
-      color: #555555;
-      font-size: 15px;
-      line-height: 1.5;
-      margin-bottom: 28px;
-    }
+    h1 { margin-top: 0; color: #1a1a1a; font-size: 24px; font-weight: 700; }
+    p { color: #555555; font-size: 15px; line-height: 1.5; margin-bottom: 25px; }
     .btn-whatsapp {
       display: block;
       background-color: #25D366;
@@ -44,25 +34,25 @@
       text-decoration: none;
       font-weight: bold;
       font-size: 17px;
-      padding: 14px 20px;
+      padding: 16px 20px;
       border-radius: 50px;
       box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
-      transition: background-color 0.2s ease;
     }
-    .btn-whatsapp:hover {
-      background-color: #20ba5a;
-    }
+    .aviso { margin-top: 20px; font-size: 12px; color: #888; }
   </style>
 </head>
 <body>
 
   <div class="card">
     <h1>Andrés Soler</h1>
-    <p>¡Hola! Haz clic en el siguiente botón para escribirme directamente a mi WhatsApp.</p>
+    <p>¡Hola! Haz clic aquí para chatear conmigo en WhatsApp.</p>
     
-    <a href="https://wa.me/573025974133" class="btn-whatsapp" target="_blank">
+    <!-- Se añade target="_top" para intentar salir del frame de TikTok -->
+    <a href="https://wa.me/573025974133" class="btn-whatsapp" target="_top">
       Contactar por WhatsApp
     </a>
+    
+    <p class="aviso">Si el botón no abre WhatsApp, toca los tres puntos (⋮) en la esquina superior derecha y selecciona "Abrir en el navegador".</p>
   </div>
 
 </body>
